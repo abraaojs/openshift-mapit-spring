@@ -1,5 +1,5 @@
 FROM docker.io/openjdk:8
-
+MAINTAINER Abraao Silva <abraaojs.dev@gmail.com>
 ENV AB_ENABLED off
 ENV AB_JOLOKIA_AUTH_OPENSHIFT true
 ENV JAVA_OPTIONS -Xmx256m 
