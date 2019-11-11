@@ -1,0 +1,7 @@
+FROM docker.io/openjdk:8-jre-slim
+MAINTAINER Abraao Silva <abraaojs.dev@gmail.com>
+EXPOSE 8080
+
+ADD target/openshift-mapit-spring-spring.jar /openshift-mapit-spring-spring.jar
+
+CMD ["/usr/local/openjdk-8/bin/java", "-jar", "/openshift-mapit-spring-spring.jar"]
